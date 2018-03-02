@@ -43,12 +43,30 @@
 </header>
 
 <section class="container">
-  <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball">
+  <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball" onclick="getMagic('awesome')">
 
   <div>
-    <form name="question">
+    <form name="qForm" onsubmit="ansQ();">
       <!-- TODO: Add a text input and submit button, attach to the form handler function you write in scripts.js -->
+      <label>What is your question?
+        <input type="text" name="question">  
+      </label>
+      <input type="submit" value="Submit">
     </form>
+    
+    <form name="aForm" onsubmit="addAns();">
+      <label>What answer would you like?
+        <input type="text" name="answer">  
+      </label>
+      <input type="submit" value="Submit">
+    </form>
+    
+    
+    
+    
+    
+    
+    
   </div>
 </section>
 <script src="scripts.js"></script>
